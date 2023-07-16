@@ -5,13 +5,18 @@
 // a = 9, b = -3 -> да
 // a = -3, b = 9 -> нет
 
+Console.WriteLine("Введите два числа и мы узнаем является ли первое число квадратом второго");
 Console.Write("Введите первое число: ");
-Console.Write("Введите второе число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
+int scr = number2 * number2;
 
-bool b = number1 == number2;
-if(number1 != number2 && number1 > 10 && number2 < 10)
+if(scr == number1)
 {
-
+    Console.WriteLine($"Да, первое число {number1} - это квадрат числа {number2}.");
+}
+else
+{
+    Console.WriteLine($"Нет, первое число {number1} - это не квадрат числа {number2}.");
 }
