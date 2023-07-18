@@ -4,7 +4,7 @@
 //  5 -> Пятница
 
 Console.Write("Введите номер дня недели: ");
-string numDay = Console.ReadLine();
+string? numDay = Console.ReadLine();
 
 if (numDay == "1"){
     Console.WriteLine("Понедельник :/");
